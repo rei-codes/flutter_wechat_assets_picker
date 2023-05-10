@@ -14,7 +14,7 @@ class Screens {
 
   /// Get [MediaQueryData] from [ui.window]
   /// 通过 [ui.window] 获取 [MediaQueryData]
-  static MediaQueryData get mediaQuery => MediaQueryData.fromWindow(ui.window);
+  static MediaQueryData get mediaQuery => MediaQueryData.fromView(ui.window);
 
   /// The number of device pixels for each logical pixel.
   /// 设备每个逻辑像素对应的dp比例
