@@ -76,14 +76,14 @@ class _HomePageState extends State<HomePage> {
                 sortKey: const OrdinalSortKey(0),
                 child: Text(
                   'WeChat Asset Picker',
-                  style: Theme.of(context).textTheme.titleLarge,
+                  style: Theme.of(context).textTheme.headline6,
                 ),
               ),
               Semantics(
                 sortKey: const OrdinalSortKey(0.1),
                 child: Text(
                   'Version: ${packageVersion ?? 'unknown'}',
-                  style: Theme.of(context).textTheme.bodySmall,
+                  style: Theme.of(context).textTheme.caption,
                 ),
               ),
             ],

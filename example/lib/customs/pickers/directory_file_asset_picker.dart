@@ -808,8 +808,8 @@ class FileAssetPickerBuilder
                   : textDelegate.confirm,
               style: TextStyle(
                 color: provider.isSelectedNotEmpty
-                    ? theme.textTheme.bodyLarge?.color
-                    : theme.textTheme.bodySmall?.color,
+                    ? theme.textTheme.bodyText1?.color
+                    : theme.textTheme.caption?.color,
                 fontSize: 17.0,
                 fontWeight: FontWeight.normal,
               ),
@@ -1066,7 +1066,7 @@ class FileAssetPickerBuilder
                   style: TextStyle(
                     color: isSelectedNotEmpty
                         ? null
-                        : theme.textTheme.bodySmall?.color,
+                        : theme.textTheme.caption?.color,
                     fontSize: 18.0,
                   ),
                 );
@@ -1129,7 +1129,7 @@ class FileAssetPickerBuilder
                               '${index + 1}',
                               style: TextStyle(
                                 color: isSelected
-                                    ? theme.textTheme.bodyLarge?.color
+                                    ? theme.textTheme.bodyText1?.color
                                     : null,
                                 fontSize: isAppleOS ? 16.0 : 14.0,
                                 fontWeight: isAppleOS
@@ -1493,8 +1493,8 @@ class FileAssetPickerViewerBuilderDelegate
               style: TextStyle(
                 color: () {
                   return provider.isSelectedNotEmpty
-                      ? themeData.textTheme.bodyLarge?.color
-                      : themeData.textTheme.bodySmall?.color;
+                      ? themeData.textTheme.bodyText1?.color
+                      : themeData.textTheme.caption?.color;
                 }(),
                 fontSize: 17.0,
                 fontWeight: FontWeight.normal,

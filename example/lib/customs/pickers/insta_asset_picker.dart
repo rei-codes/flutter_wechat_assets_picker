@@ -298,6 +298,11 @@ class InstaAssetPickerBuilder extends DefaultAssetPickerBuilderDelegate {
       ValueNotifier<AssetEntity?>(null);
 
   @override
+  void initState(AssetPickerState<AssetEntity, AssetPathEntity> state) {
+    super.initState(state);
+  }
+
+  @override
   void dispose() {
     if (!keepScrollOffset) {
       _viewerPosition.dispose();
@@ -710,7 +715,7 @@ class InstaAssetPickerBuilder extends DefaultAssetPickerBuilderDelegate {
               padding: const EdgeInsets.all(4),
               color: isPreview
                   ? theme.selectedRowColor.withOpacity(.5)
-                  : theme.colorScheme.background.withOpacity(.1),
+                  : theme.backgroundColor.withOpacity(.1),
               child: Align(
                 alignment: AlignmentDirectional.topEnd,
                 child: isSelected && !isSingleAssetMode

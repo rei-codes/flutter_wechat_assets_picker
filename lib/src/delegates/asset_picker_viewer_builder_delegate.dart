@@ -860,7 +860,7 @@ class DefaultAssetPickerViewerBuilderDelegate
             child: ScaleText(
               buildText(),
               style: TextStyle(
-                color: themeData.textTheme.bodyLarge?.color,
+                color: themeData.textTheme.bodyText1?.color,
                 fontSize: 17,
                 fontWeight: FontWeight.normal,
               ),
